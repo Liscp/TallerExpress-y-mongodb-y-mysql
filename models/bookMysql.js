@@ -1,6 +1,6 @@
   const Sequelize = require('sequelize')
 
-  const sequelize = new Sequelize('bse3','root','', {
+  const sequelize = new Sequelize('bse3','root','123456789', {
     host: 'localhost',
     dialect: 'mysql'
   });
@@ -9,7 +9,8 @@
   
     titulo: Sequelize.STRING,
     nombre: Sequelize.STRING,
-    autor: Sequelize.STRING
+    autor: Sequelize.STRING,
+    editorial: Sequelize.STRING
   },
   {
       timestamps: false
